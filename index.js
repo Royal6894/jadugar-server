@@ -13,7 +13,7 @@ app.use(cors({
   origin: process.env.CLIENT_ORIGIN?.split(",").map(s => s.trim()) || true
 }));
 
-const rewardAmount = BigInt(process.env.REWARD_AMOUNT || "100");
+const rewardAmount = BigInt(process.env.REWARD_AMOUNT || "50");
 const cooldownSeconds = Number(process.env.REWARD_COOLDOWN_SECONDS || 60);
 const initDataMaxAge = Number(process.env.TELEGRAM_INITDATA_MAX_AGE_SECONDS || 86400);
 
